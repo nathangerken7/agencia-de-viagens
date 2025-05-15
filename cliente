@@ -1,0 +1,29 @@
+
+package model;
+
+public class Cliente {
+    private int id;
+    private String nome;
+    private String tipo; // nacional ou estrangeiro
+    private String identificador; // CPF ou passaporte
+    private String email;
+
+    public Cliente(int id, String nome, String tipo, String identificador, String email) {
+        this.id = id;
+        this.nome = nome;
+        this.tipo = tipo;
+        this.identificador = identificador;
+        this.email = email;
+    }
+
+    public int getId() { return id; }
+    public String getNome() { return nome; }
+    public String getTipo() { return tipo; }
+    public String getIdentificador() { return identificador; }
+    public String getEmail() { return email; }
+
+    public void setNome(String nome) { this.nome = nome; }
+    public void setTipo(String tipo) { this.tipo = tipo; }
+    public void setIdentificador(String identificador) { this.identificador = identificador; }
+    public void setEmail(String email) { this.email = email; }
+}
